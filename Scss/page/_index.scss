@@ -1,0 +1,339 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style-type: none;
+   }
+   header{
+        max-width: 1920px;
+        height: 120px;
+        background: #fff;
+        padding: 47px 0;
+   .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   .logo{
+         
+        cursor: pointer;
+   h2{
+        color:#001F3F;
+        font-family: "Space Grotesk";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px; /* 140% */
+        }
+         }
+        }
+   .nav-list{
+        display: flex;
+        gap:30px;
+        li{
+             a{
+                  text-decoration: none;
+                  color:#001F3F;
+                  font-family: "Space Grotesk";
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 26px; /* 162.5% */
+                  text-transform: uppercase;
+                  transition: all 0.3s ease-in-out;
+                  &:hover{
+                   
+                       color:#FF5A30;
+                       border-bottom: 1px solid #FF5A30;
+                  }
+             } 
+             
+        }
+         
+   }
+   .sing{
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        .search-icon{
+          text-decoration: none;
+        }
+        .sing-btn{
+             width: 178px;
+             height: 60px;
+             border-radius: 5px;
+             background:#FF5A30;
+             display: flex;
+             align-items: center;
+             gap: 10px;
+             padding: 0 20px;
+             outline: none;
+             border: none;
+             a{
+                  text-decoration: none;
+                  color:  #FFF;
+                  font-family: "Space Grotesk";
+                  font-size: 16px;
+                  font-weight: 700;
+                  line-height: 30px; 
+                  
+             }
+             .icon-arrow-right2{
+               color: #FFF;
+             }
+          &:hover{
+             border: 1px solid gray;
+             background:  transparent;
+              &:hover a{
+                  color: #FF5A30;
+              }
+              .icon-arrow-right2{
+               color: #FF5A30;
+              }
+          }   
+        }
+   }
+   }
+   // header end
+
+.clamber{
+     margin-top: 40px;
+     background: url('../../img/clamber.png');
+     height: 480px;
+     position: relative;
+     z-index: 1;
+     &::after{
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          background: rgba(0, 31, 63, 0.8);
+     }
+          h1{
+               color:   #FFF;
+               font-family: "Space Grotesk";
+               font-size: 80px;
+               font-weight: 700;
+               line-height: 100px; /* 125% */
+              
+               padding-top: 145px;
+               z-index: 1;
+          }
+          .home{
+               left: 375px;
+               display: flex;
+               align-items: center;
+               gap: 15px;
+               padding-top: 115px;
+                
+                i{
+                    width: 18px;
+                    height: 18.003px;
+                    color: #FFF;
+                }
+                h3{
+                    color:   #FFF;
+                    font-family: "Space Grotesk";
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 30px; /* 150% */
+                }
+          }
+    
+     
+}
+// our project
+.project{
+     margin-top: 40px;
+     .project-head{
+          width: 442px;
+          height: 60px;
+          border: 1px solid #C1D4E8;
+          ul{
+               display: flex;
+               gap: 30px;
+               padding: 15px 10px;
+               li{
+                    a{
+                         text-decoration: none;
+                         color: #001F3F;
+                         font-family: 'Space Grotesk';
+                         font-weight: 700;
+                         font-size: 16px;
+                         line-height: 26px;
+                         transition: all 0.4s ease-in-out;
+                         &:hover{
+                              color: #FF5A30;
+                         }
+                    }
+               }
+          }
+     }
+     .project-body{
+          margin-top: 30px;
+          .left-img{
+               position: relative;
+               transition: all 0.2s ease-in-out;
+               .l-img{
+                    border-radius: 20px;
+                    height: 360px;
+                    img{
+                         width: 100%;
+                         height: 100%;
+                    }
+               }
+             &:hover .content{
+               display: block;
+             }
+             .content{
+               position: absolute;
+               // background: rgba(0, 31, 63, 0.8);
+               background: linear-gradient(180deg, rgba(0, 31, 63, 0) 0%, rgba(0, 31, 63, 0.967949) 100%);
+border-radius: 20px;
+               border-radius: 20px;
+               width: 100%;
+               height: 100%;
+               top: 0;
+               left: 0;
+               display: none;
+          }
+          .text-content{
+               margin-top: 30%;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 20px 30px;
+          
+               .heading{
+                    
+                    .main-h{
+                         font-family: 'Space Grotesk';
+                         font-weight: 700;
+                         font-size: 20px;
+                         line-height: 30px;
+                         color: #FFFFFF;
+                    }
+                    .sub-h{
+                         font-family: 'Space Grotesk';
+                         font-weight: 400;
+                         font-size: 16px;
+                         line-height: 26px;
+                         color: #FFFFFF;
+                    }
+                    
+                       
+               }
+              .c-icon{
+               text-decoration: none;
+               width: 60px ;
+               height: 60px;
+               border-radius: 50%;
+               background: #FF5A30;
+               position: relative;
+               i{
+                    position: absolute;
+                    top: 40%;
+                    left: 38%;
+                    color: #fff;
+               }
+               &:hover{
+                    background: transparent;
+                    border:1px solid #FF5A30;
+                    &:hover i{
+                         color: #FF5A30;
+                    }
+          
+               }
+              }
+          }
+
+
+          }
+          .right-img{
+             position: relative;
+             transition: all 0.4s ease-in-out;
+               .r-img{
+                    height: 360px;
+                    border-radius: 20px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+               }
+               &:hover .content{
+                    display: block;
+               }
+               .content{
+                    position: absolute;
+                         // background: rgba(0, 31, 63, 0.8);
+                         background: linear-gradient(180deg, rgba(0, 31, 63, 0) 0%, rgba(0, 31, 63, 0.967949) 100%);
+border-radius: 20px;
+                         border-radius: 20px;
+                         width: 100%;
+                         height: 100%;
+                         top: 0;
+                         left: 0;
+                         display: none;
+                         .text-content{
+                                   margin-top: 60%;
+                                   display: flex;
+                                   justify-content: space-between;
+                                   align-items: center;
+                                   padding: 20px 30px;
+                              
+                                   .heading{
+                                        
+                                        .main-h{
+                                             font-family: 'Space Grotesk';
+                                             font-weight: 700;
+                                             font-size: 18px;
+                                             line-height: 30px;
+                                             color: #FFFFFF;
+                                        }
+                                        .sub-h{
+                                             font-family: 'Space Grotesk';
+                                             font-weight: 400;
+                                             font-size: 14px;
+                                             line-height: 26px;
+                                             color: #FFFFFF;
+                                        }
+                                        
+                                           
+                                   }
+                                  .c-icon{
+                                   text-decoration: none;
+                                   width: 60px ;
+                                   height: 60px;
+                                   border-radius: 50%;
+                                   background: #FF5A30;
+                                   position: relative;
+                                   i{
+                                        position: absolute;
+                                        top: 40%;
+                                        left: 38%;
+                                        color: #fff;
+                                   }
+                                   &:hover{
+                                        background: transparent;
+                                        border:1px solid #FF5A30;
+                                        &:hover i{
+                                             color: #FF5A30;
+                                        }
+                              
+                                   }
+                                  }}
+               }
+                
+          }
+         
+
+          .snd{
+               padding: 30px 0;
+          }
+     }
+}
+// footer
+ 
