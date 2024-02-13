@@ -12,9 +12,8 @@
      
      
 .left-bar{
-     border: 1px solid green;
-          // width: 370px ;
-          // margin: 0 auto;
+          width: 370px ;
+          margin: 0 auto;
      .left-content{
                width: 370px;
                margin: 0 auto;
@@ -201,6 +200,59 @@
                               }
                          }
                     }
+               }
+          }
+          .need-contraction{
+               cursor: pointer;
+               margin-top: 30px;
+               position: relative;
+               .content{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 370px;
+                    height: 290px;
+                    background: linear-gradient(90deg, #001F3F 0%, rgba(0, 31, 63, 0) 100%);
+                    border-radius: 5px;
+                   
+                    h3{
+                         width: 158px;
+                         height: 80px;
+                         font-family: 'Space Grotesk';
+                         font-weight: 700;
+                         font-size: 30px;
+                         line-height: 40px;
+                         color: #FFFFFF;
+                         margin-top: 30%;
+                         margin-left: 15%;
+                    }
+                    .contact{
+                         display: flex;
+                         align-items: center;
+                         gap: 10px;
+                         padding: 10px 40px;
+                         h4{
+                              font-family: 'Space Grotesk';
+                              font-style: normal;
+                              font-weight: 700;
+                              font-size: 15px;
+                              line-height: 20px;
+                              color: #FFFFFF;
+                         }
+                         .blog-icon{
+                              width: 30px;
+                              height: 30px;
+                              border-radius: 50px;
+                              background: #FAFAFF;
+                              position: relative;
+                              i{
+                                   position: absolute;
+                                   top: 8px;
+                                   left: 8px;
+                              }
+                         }
+                    }
+                   
                }
           }
      }
