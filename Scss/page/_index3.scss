@@ -463,6 +463,7 @@
                     .right-p{
                          width: 370px;
                          border: 1px solid gray;
+                         border-radius: 10px;
                          padding: 10px 15px;
                          text-align: end;
                          .prev{
@@ -482,6 +483,117 @@
                               &:hover{
                                    color: #FF5A30;
                               }
+                         }
+                    }
+               }
+               .pre-comment{
+                    margin-top: 30px;
+                    .head-line{
+                         @include headings;
+                    }
+                    .content-com{
+                         padding: 20px 0;
+                         display: flex;
+                         gap: 20px;
+                         .body{
+
+                         .name{
+                                   font-family: 'Space Grotesk';
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   font-size: 15px;
+                                   line-height: 20px;
+                                   color: #001F3F;
+                                   transition: all 0.4s ease-in-out;
+                                   &:hover{
+                                        color: #FF5A30;
+                                   }
+                         }
+                         .pera{
+                                   font-family: 'Space Grotesk';
+                                   font-weight: 400;
+                                   font-size: 16px;
+                                   line-height: 26px;
+                                   color: #435970;
+                         }
+                         .end-com{
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              .date{
+                                   font-family: 'Space Grotesk';
+                                   font-style: normal;
+                                   font-weight: 400;
+                                   font-size: 16px;
+                                   line-height: 26px;
+                                   color: #435970;
+                              }
+                              .reply{
+                                   font-family: 'Space Grotesk';
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   font-size: 16px;
+                                   line-height: 30px;
+                                   color: #001F3F;
+                                   cursor: pointer;
+                                   a{
+                                        color: #001F3F;
+                                   }
+                              }
+                         }
+                         }
+                    }
+                    // 
+                    .content-com2{
+                         padding: 10px 50px;
+                         display: flex;
+                         gap: 20px;
+                         .body{
+
+                         .name{
+                                   font-family: 'Space Grotesk';
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   font-size: 15px;
+                                   line-height: 20px;
+                                   color: #001F3F;
+                                   transition: all 0.4s ease-in-out;
+                                   &:hover{
+                                        color: #FF5A30;
+                                   }
+                         }
+                         .pera{
+                                   font-family: 'Space Grotesk';
+                                   font-weight: 400;
+                                   font-size: 16px;
+                                   line-height: 26px;
+                                   color: #435970;
+                         }
+                         .end-com{
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              .date{
+                                   font-family: 'Space Grotesk';
+                                   font-style: normal;
+                                   font-weight: 400;
+                                   font-size: 16px;
+                                   line-height: 26px;
+                                   color: #435970;
+                              }
+                              .reply{
+                                   font-family: 'Space Grotesk';
+                                   font-style: normal;
+                                   font-weight: 700;
+                                   font-size: 16px;
+                                   line-height: 30px;
+                                   color: #001F3F;
+                                   cursor: pointer;
+                                   a{
+                                        color: #001F3F;
+                                   }
+                              }
+                         }
                          }
                     }
                }
