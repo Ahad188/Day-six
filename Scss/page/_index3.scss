@@ -1,0 +1,35 @@
+.blog-details{
+     // margin-top: 109px;
+     margin: 109px;
+     // border: 1px solid red;
+     
+     .left-bar{
+          // border: 1px solid green;
+         .search-div{
+          width: 370px;
+          height: 60px;
+          border-radius: 5px;
+          padding: 10px 20px;
+          background: #FAFAFF;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          input{
+               border: none;
+               outline: none;
+               background: transparent;
+               &::placeholder{
+                    font-family: 'Space Grotesk';
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #435970;
+               }
+          }
+         }
+     }
+     .right-bar{
+          border: 1px solid orange;
+     }
+}
+
