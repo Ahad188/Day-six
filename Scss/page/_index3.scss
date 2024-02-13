@@ -5,6 +5,20 @@
      line-height: 30px;
      color: #001F3F;
 }
+@mixin headings{
+     font-family: 'Space Grotesk';
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 30px;
+     color: #001F3F;
+}
+@mixin peras{
+     font-family: 'Space Grotesk';
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 26px;
+     color: #435970;
+}
 // 
 .blog-details{
      // margin-top: 109px;
@@ -260,7 +274,221 @@
          
 }
      .right-bar{
-          border: 1px solid orange;
+          // border: 1px solid orange;
+          height: 1000px;
+         
+          // height: 100vh;
+          .right-1st-img{
+               position: relative;
+               .right-img{
+                    width: 100%;
+               }
+          }
+          .feBs{
+               position: absolute;
+               top: 218%;
+               left: 85%;
+               width: 50px;
+               clip-path: polygon(73% 0, 100% 25%, 98% 100%, 50% 100%, 0 100%, 0 0);
+               background: #001F3F;
+               border-radius: 5px;
+               
+          .feb{
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    margin-left: 10px;
+                     
+          }
+          .twenty{
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: #FFFFFF;
+                    margin-left: 10px;
+          }
+          &:hover{
+               background: #FF5A30;
+          }
+          }
+          .top-h{
+               .name{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px 0;
+                    h3{
+                         font-family: 'Space Grotesk';
+                         font-weight: 400;
+                         font-size: 16px;
+                         line-height: 26px;
+                         color: #001F3F;
+                    }
+               }
+          }
+          // content
+          .content-details{
+               .head-line{
+                    @include headings;
+               }
+               .pera{
+                    @include peras;
+               }
+               .blog-1{
+                    padding: 15px 0;
+               }
+               .blog-2{
+                    margin-top: 10px;
+               }
+               .comment{
+                    height: 226px;
+                    border-radius: 5px;
+                    text-align: center;
+                    border: 1px solid red;
+                     padding: 20px 0;
+                    .pera{
+                    @include peras;
+                    text-align: center;
+                    padding: 20px 30px;
+                    }
+                    .commenter{
+                         font-family: 'Space Grotesk';
+                         font-weight: 700;
+                         font-size: 15px;
+                         line-height: 20px;
+                         text-align: center;
+                         color: #001F3F;
+                    }
+               }
+               .rounded-runner{
+                    margin-top: 30px;
+                    .head-line{
+                         @include heading;
+                    }
+                    .pera{
+                         @include peras;
+                    }
+               }
+               .material{
+                    margin-top: 30px;
+                    .secnd-img{
+                          padding: 30px 0;
+                    }
+                    .facility{
+                         display: grid;
+                         grid-template-columns: repeat(2,1fr);
+                         li{
+                              list-style-type: circle;
+                              font-family: 'Space Grotesk';
+                              font-weight: 700;
+                              font-size: 15px;
+                              line-height: 20px;
+                              color: #001F3F;
+                              padding: 10px 0;
+                              transition: all 0.4s ease-in-out;
+                              &:hover{
+                                   color: #FF5A30;
+                              }
+                         }
+                    }
+               }
+               .tag-content{
+                    display:flex;
+                    gap: 10px;
+                    padding: 20px 15px;
+                    border-top: 1px solid #435970;
+                    border-bottom: 1px solid #435970;
+                     
+                    button{
+                         background: #FFFFFF;
+                         border-radius: 5px;
+                         outline: none;
+                         border: none;
+                         width: 100px;
+                         height: 50px;
+                         transition: all 0.4s ease-in-out;
+                         a{
+                         font-family: 'Space Grotesk';
+                         font-weight: 700;
+                         font-size: 15px;
+                         line-height: 20px;
+                         color: #001F3F;
+                         // padding: 10px 20px;
+                         transition: all 0.4s ease-in-out;
+                         }
+                         &:hover{
+                              background: #FF5A30;
+                              
+                         }
+                         &:hover a{
+                              color: #FFF;
+                         }
+                        
+                    }
+               }
+               .post{
+                    margin-top: 30px;
+                    display: flex;
+                    gap: 30px;
+                    // justify-content: space-between;
+                    .left-p{
+                         width: 370px;
+                         padding: 10px 15px;
+                         border-radius: 10px;
+                         border: 1px solid red;
+                         .prev{
+                              font-family: 'Inter';
+                              font-weight: 400;
+                              font-size: 15px;
+                              line-height: 25px;
+                              color: #001F3F;
+                         }
+                         .sub-h{
+                              font-family: 'Sora';
+                              font-weight: 600;
+                              font-size: 15px;
+                              line-height: 25px;
+                              color: #001F3F;
+                              transition: all 0.4s ease-in-out;
+                              &:hover{
+                                   color: #FF5A30;
+                              }
+                         }
+                    }
+                    .right-p{
+                         width: 370px;
+                         border: 1px solid gray;
+                         padding: 10px 15px;
+                         text-align: end;
+                         .prev{
+                              font-family: 'Inter';
+                              font-weight: 400;
+                              font-size: 15px;
+                              line-height: 25px;
+                              color: #001F3F;
+                         }
+                         .sub-h{
+                              font-family: 'Sora';
+                              font-weight: 600;
+                              font-size: 15px;
+                              line-height: 25px;
+                              color: #001F3F;
+                              transition: all 0.4s ease-in-out;
+                              &:hover{
+                                   color: #FF5A30;
+                              }
+                         }
+                    }
+               }
+               
+          }
+          
+          
      }
 }
 
