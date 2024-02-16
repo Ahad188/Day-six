@@ -56,7 +56,7 @@
           .category{
                     margin-top: 30px;
                     background: #FAFAFF;
-                    padding: 10px 30px;
+                    // padding: 10px 30px;
                     width: 370px;
                     .category-h3{
                          @include heading;
@@ -128,8 +128,9 @@
                     .blog-icon{
                          display: none;
                          position: absolute;
-                         top:30px;
-                         left: 3%;
+                         top: 40%;
+                         left: 10%;
+                         transform: translate(-40%, -10%);
                          transition: all 0.4s ease-in-out;
                          .c-icon{
                               padding: 15px 25px;
@@ -220,6 +221,12 @@
                cursor: pointer;
                margin-top: 30px;
                position: relative;
+               .need-img{
+                    overflow: hidden;
+                    cursor: pointer;
+                    
+
+               }
                .content{
                     position: absolute;
                     top: 0;
@@ -280,13 +287,19 @@
           // height: 100vh;
           .right-1st-img{
                position: relative;
+               overflow: hidden;
                .right-img{
                     width: 100%;
+                    transition: transform  0.4s ease-in-out;
                }
+               &:hover .right-img{
+                    transform: scale(1.2);
+               }
+                
           }
           .feBs{
                position: absolute;
-               top: 218%;
+               top:85%;
                left: 85%;
                width: 50px;
                clip-path: polygon(73% 0, 100% 25%, 98% 100%, 50% 100%, 0 100%, 0 0);
@@ -374,6 +387,18 @@
                          @include peras;
                     }
                }
+               .secnd-img{
+                    width: 100%;
+                    overflow: hidden;
+                    img{
+                         width: 100%;
+                         transition: all 0.4s ease-in-out;
+                    }
+                     &:hover img{
+                         transform: scale(1.2);
+                     }
+                    
+               }
                .material{
                     margin-top: 30px;
                     .secnd-img{
@@ -440,7 +465,8 @@
                          width: 370px;
                          padding: 10px 15px;
                          border-radius: 10px;
-                         border: 1px solid red;
+                         border: 1px solid #C1D4E8;
+                         transition: all 0.4s ease-in-out;
                          .prev{
                               font-family: 'Inter';
                               font-weight: 400;
@@ -459,13 +485,18 @@
                                    color: #FF5A30;
                               }
                          }
+                         &:hover{
+                              border: 1px solid #FF5A30;
+                         }
+                         
                     }
                     .right-p{
                          width: 370px;
-                         border: 1px solid gray;
+                         border: 1px solid #C1D4E8;
                          border-radius: 10px;
                          padding: 10px 15px;
                          text-align: end;
+                         transition: all 0.4s ease-in-out;
                          .prev{
                               font-family: 'Inter';
                               font-weight: 400;
@@ -483,6 +514,9 @@
                               &:hover{
                                    color: #FF5A30;
                               }
+                         }
+                         &:hover{
+                              border: 1px solid #FF5A30;
                          }
                     }
                }
@@ -505,6 +539,7 @@
                                    line-height: 20px;
                                    color: #001F3F;
                                    transition: all 0.4s ease-in-out;
+                                   cursor: pointer;
                                    &:hover{
                                         color: #FF5A30;
                                    }
@@ -659,6 +694,10 @@
                     outline: none;
                     border: none;
                     color: #FAFAFF;
+                    transition: all 0.4s ease-in-out;
+                    &:hover{
+                         background: #FF5A30;
+                    }
                }
            }
           
